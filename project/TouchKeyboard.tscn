@@ -1,0 +1,437 @@
+[gd_scene load_steps=5 format=3 uid="uid://cnqgmo0qgh55x"]
+
+[ext_resource type="Script" path="res://TouchKeyboard.gd" id="1_47syq"]
+[ext_resource type="FontFile" uid="uid://cr734us8lknee" path="res://kenney_ui-pack/Font/GOTHICB.TTF" id="2_mod8l"]
+[ext_resource type="Script" path="res://KeyboardKey.gd" id="3_j4lbv"]
+
+[sub_resource type="Theme" id="Theme_gdnt5"]
+
+[node name="TouchKeyboard" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_47syq")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+anchor_left = 0.05625
+anchor_top = 0.444
+anchor_right = 0.956
+anchor_bottom = 1.011
+offset_top = -7.68002
+offset_right = 0.319946
+offset_bottom = -3.92004
+grow_horizontal = 2
+grow_vertical = 0
+alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_bottom = 20
+
+[node name="Row1" type="HBoxContainer" parent="VBoxContainer/MarginContainer"]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+alignment = 1
+
+[node name="A" type="Button" parent="VBoxContainer/MarginContainer/Row1" groups=["KeyboardKey"]]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+size_flags_horizontal = 6
+theme = SubResource("Theme_gdnt5")
+theme_override_fonts/font = ExtResource("2_mod8l")
+theme_override_font_sizes/font_size = 55
+action_mode = 0
+text = "A"
+script = ExtResource("3_j4lbv")
+letter = "a"
+metadata/_edit_use_anchors_ = true
+
+[node name="B" type="Button" parent="VBoxContainer/MarginContainer/Row1" groups=["KeyboardKey"]]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+size_flags_horizontal = 6
+theme = SubResource("Theme_gdnt5")
+theme_override_fonts/font = ExtResource("2_mod8l")
+theme_override_font_sizes/font_size = 55
+text = "B"
+script = ExtResource("3_j4lbv")
+letter = "b"
+metadata/_edit_use_anchors_ = true
+
+[node name="C" type="Button" parent="VBoxContainer/MarginContainer/Row1" groups=["KeyboardKey"]]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+size_flags_horizontal = 6
+theme = SubResource("Theme_gdnt5")
+theme_override_fonts/font = ExtResource("2_mod8l")
+theme_override_font_sizes/font_size = 55
+text = "C"
+script = ExtResource("3_j4lbv")
+letter = "c"
+metadata/_edit_use_anchors_ = true
+
+[node name="D" type="Button" parent="VBoxContainer/MarginContainer/Row1" groups=["KeyboardKey"]]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+size_flags_horizontal = 6
+theme = SubResource("Theme_gdnt5")
+theme_override_fonts/font = ExtResource("2_mod8l")
+theme_override_font_sizes/font_size = 55
+text = "D"
+script = ExtResource("3_j4lbv")
+letter = "d"
+metadata/_edit_use_anchors_ = true
+
+[node name="E" type="Button" parent="VBoxContainer/MarginContainer/Row1" groups=["KeyboardKey"]]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+size_flags_horizontal = 6
+theme = SubResource("Theme_gdnt5")
+theme_override_fonts/font = ExtResource("2_mod8l")
+theme_override_font_sizes/font_size = 55
+text = "E"
+script = ExtResource("3_j4lbv")
+letter = "e"
+metadata/_edit_use_anchors_ = true
+
+[node name="F" type="Button" parent="VBoxContainer/MarginContainer/Row1" groups=["KeyboardKey"]]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+size_flags_horizontal = 6
+theme = SubResource("Theme_gdnt5")
+theme_override_fonts/font = ExtResource("2_mod8l")
+theme_override_font_sizes/font_size = 55
+text = "F"
+script = ExtResource("3_j4lbv")
+letter = "f"
+metadata/_edit_use_anchors_ = true
+
+[node name="G" type="Button" parent="VBoxContainer/MarginContainer/Row1" groups=["KeyboardKey"]]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+size_flags_horizontal = 6
+theme = SubResource("Theme_gdnt5")
+theme_override_fonts/font = ExtResource("2_mod8l")
+theme_override_font_sizes/font_size = 55
+text = "G"
+script = ExtResource("3_j4lbv")
+letter = "g"
+metadata/_edit_use_anchors_ = true
+
+[node name="H" type="Button" parent="VBoxContainer/MarginContainer/Row1" groups=["KeyboardKey"]]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+size_flags_horizontal = 6
+theme = SubResource("Theme_gdnt5")
+theme_override_fonts/font = ExtResource("2_mod8l")
+theme_override_font_sizes/font_size = 55
+text = "H"
+script = ExtResource("3_j4lbv")
+letter = "h"
+metadata/_edit_use_anchors_ = true
+
+[node name="I" type="Button" parent="VBoxContainer/MarginContainer/Row1" groups=["KeyboardKey"]]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+size_flags_horizontal = 6
+theme = SubResource("Theme_gdnt5")
+theme_override_fonts/font = ExtResource("2_mod8l")
+theme_override_font_sizes/font_size = 55
+text = "I"
+script = ExtResource("3_j4lbv")
+letter = "i"
+metadata/_edit_use_anchors_ = true
+
+[node name="J" type="Button" parent="VBoxContainer/MarginContainer/Row1" groups=["KeyboardKey"]]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+size_flags_horizontal = 6
+theme = SubResource("Theme_gdnt5")
+theme_override_fonts/font = ExtResource("2_mod8l")
+theme_override_font_sizes/font_size = 55
+text = "J"
+script = ExtResource("3_j4lbv")
+letter = "j"
+metadata/_edit_use_anchors_ = true
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_bottom = 20
+
+[node name="Row2" type="HBoxContainer" parent="VBoxContainer/MarginContainer2"]
+custom_minimum_size = Vector2(0, 75)
+layout_mode = 2
+size_flags_vertical = 0
+alignment = 1
+
+[node name="K" type="Button" parent="VBoxContainer/MarginContainer2/Row2" groups=["KeyboardKey"]]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+size_flags_horizontal = 6
+theme = SubResource("Theme_gdnt5")
+theme_override_fonts/font = ExtResource("2_mod8l")
+theme_override_font_sizes/font_size = 55
+text = "K"
+script = ExtResource("3_j4lbv")
+letter = "k"
+metadata/_edit_use_anchors_ = true
+
+[node name="L" type="Button" parent="VBoxContainer/MarginContainer2/Row2" groups=["KeyboardKey"]]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+size_flags_horizontal = 6
+theme = SubResource("Theme_gdnt5")
+theme_override_fonts/font = ExtResource("2_mod8l")
+theme_override_font_sizes/font_size = 55
+text = "L"
+script = ExtResource("3_j4lbv")
+letter = "l"
+metadata/_edit_use_anchors_ = true
+
+[node name="M" type="Button" parent="VBoxContainer/MarginContainer2/Row2" groups=["KeyboardKey"]]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+size_flags_horizontal = 6
+theme = SubResource("Theme_gdnt5")
+theme_override_fonts/font = ExtResource("2_mod8l")
+theme_override_font_sizes/font_size = 55
+text = "M"
+script = ExtResource("3_j4lbv")
+letter = "m"
+metadata/_edit_use_anchors_ = true
+
+[node name="N" type="Button" parent="VBoxContainer/MarginContainer2/Row2" groups=["KeyboardKey"]]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+size_flags_horizontal = 6
+theme = SubResource("Theme_gdnt5")
+theme_override_fonts/font = ExtResource("2_mod8l")
+theme_override_font_sizes/font_size = 55
+text = "N"
+script = ExtResource("3_j4lbv")
+letter = "n"
+metadata/_edit_use_anchors_ = true
+
+[node name="O" type="Button" parent="VBoxContainer/MarginContainer2/Row2" groups=["KeyboardKey"]]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+size_flags_horizontal = 6
+theme = SubResource("Theme_gdnt5")
+theme_override_fonts/font = ExtResource("2_mod8l")
+theme_override_font_sizes/font_size = 55
+text = "O"
+script = ExtResource("3_j4lbv")
+letter = "o"
+metadata/_edit_use_anchors_ = true
+
+[node name="P" type="Button" parent="VBoxContainer/MarginContainer2/Row2" groups=["KeyboardKey"]]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+size_flags_horizontal = 6
+theme = SubResource("Theme_gdnt5")
+theme_override_fonts/font = ExtResource("2_mod8l")
+theme_override_font_sizes/font_size = 55
+text = "P"
+script = ExtResource("3_j4lbv")
+letter = "p"
+metadata/_edit_use_anchors_ = true
+
+[node name="Q" type="Button" parent="VBoxContainer/MarginContainer2/Row2" groups=["KeyboardKey"]]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+size_flags_horizontal = 6
+theme = SubResource("Theme_gdnt5")
+theme_override_fonts/font = ExtResource("2_mod8l")
+theme_override_font_sizes/font_size = 55
+text = "Q"
+script = ExtResource("3_j4lbv")
+letter = "q"
+metadata/_edit_use_anchors_ = true
+
+[node name="R" type="Button" parent="VBoxContainer/MarginContainer2/Row2" groups=["KeyboardKey"]]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+size_flags_horizontal = 6
+theme = SubResource("Theme_gdnt5")
+theme_override_fonts/font = ExtResource("2_mod8l")
+theme_override_font_sizes/font_size = 55
+text = "R"
+script = ExtResource("3_j4lbv")
+letter = "r"
+metadata/_edit_use_anchors_ = true
+
+[node name="S" type="Button" parent="VBoxContainer/MarginContainer2/Row2" groups=["KeyboardKey"]]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+size_flags_horizontal = 6
+theme = SubResource("Theme_gdnt5")
+theme_override_fonts/font = ExtResource("2_mod8l")
+theme_override_font_sizes/font_size = 55
+text = "S"
+script = ExtResource("3_j4lbv")
+letter = "s"
+metadata/_edit_use_anchors_ = true
+
+[node name="MarginContainer3" type="MarginContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_bottom = 20
+
+[node name="Row3" type="HBoxContainer" parent="VBoxContainer/MarginContainer3"]
+custom_minimum_size = Vector2(0, 75)
+layout_mode = 2
+size_flags_vertical = 0
+alignment = 1
+
+[node name="T" type="Button" parent="VBoxContainer/MarginContainer3/Row3" groups=["KeyboardKey"]]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+size_flags_horizontal = 6
+theme = SubResource("Theme_gdnt5")
+theme_override_fonts/font = ExtResource("2_mod8l")
+theme_override_font_sizes/font_size = 55
+text = "T"
+script = ExtResource("3_j4lbv")
+letter = "t"
+metadata/_edit_use_anchors_ = true
+
+[node name="U" type="Button" parent="VBoxContainer/MarginContainer3/Row3" groups=["KeyboardKey"]]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+size_flags_horizontal = 6
+theme = SubResource("Theme_gdnt5")
+theme_override_fonts/font = ExtResource("2_mod8l")
+theme_override_font_sizes/font_size = 55
+text = "U"
+script = ExtResource("3_j4lbv")
+letter = "u"
+metadata/_edit_use_anchors_ = true
+
+[node name="V" type="Button" parent="VBoxContainer/MarginContainer3/Row3" groups=["KeyboardKey"]]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+size_flags_horizontal = 6
+theme = SubResource("Theme_gdnt5")
+theme_override_fonts/font = ExtResource("2_mod8l")
+theme_override_font_sizes/font_size = 55
+text = "V"
+script = ExtResource("3_j4lbv")
+letter = "v"
+metadata/_edit_use_anchors_ = true
+
+[node name="W" type="Button" parent="VBoxContainer/MarginContainer3/Row3" groups=["KeyboardKey"]]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+size_flags_horizontal = 6
+theme = SubResource("Theme_gdnt5")
+theme_override_fonts/font = ExtResource("2_mod8l")
+theme_override_font_sizes/font_size = 55
+text = "W"
+script = ExtResource("3_j4lbv")
+letter = "w"
+metadata/_edit_use_anchors_ = true
+
+[node name="X" type="Button" parent="VBoxContainer/MarginContainer3/Row3" groups=["KeyboardKey"]]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+size_flags_horizontal = 6
+theme = SubResource("Theme_gdnt5")
+theme_override_fonts/font = ExtResource("2_mod8l")
+theme_override_font_sizes/font_size = 55
+text = "X"
+script = ExtResource("3_j4lbv")
+letter = "x"
+metadata/_edit_use_anchors_ = true
+
+[node name="Y" type="Button" parent="VBoxContainer/MarginContainer3/Row3" groups=["KeyboardKey"]]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+size_flags_horizontal = 6
+theme = SubResource("Theme_gdnt5")
+theme_override_fonts/font = ExtResource("2_mod8l")
+theme_override_font_sizes/font_size = 55
+text = "Y"
+script = ExtResource("3_j4lbv")
+letter = "y"
+metadata/_edit_use_anchors_ = true
+
+[node name="Z" type="Button" parent="VBoxContainer/MarginContainer3/Row3" groups=["KeyboardKey"]]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+size_flags_horizontal = 6
+theme = SubResource("Theme_gdnt5")
+theme_override_fonts/font = ExtResource("2_mod8l")
+theme_override_font_sizes/font_size = 55
+text = "Z"
+script = ExtResource("3_j4lbv")
+letter = "z"
+metadata/_edit_use_anchors_ = true
+
+[connection signal="keypress" from="VBoxContainer/MarginContainer/Row1/A" to="." method="_on_a_keypress"]
+[connection signal="pressed" from="VBoxContainer/MarginContainer/Row1/A" to="VBoxContainer/MarginContainer/Row1/A" method="_on_pressed"]
+[connection signal="keypress" from="VBoxContainer/MarginContainer/Row1/B" to="." method="_on_b_keypress"]
+[connection signal="keypress" from="VBoxContainer/MarginContainer/Row1/B" to="." method="_on_a_keypress"]
+[connection signal="pressed" from="VBoxContainer/MarginContainer/Row1/B" to="VBoxContainer/MarginContainer/Row1/B" method="_on_pressed"]
+[connection signal="keypress" from="VBoxContainer/MarginContainer/Row1/C" to="." method="_on_a_keypress"]
+[connection signal="keypress" from="VBoxContainer/MarginContainer/Row1/C" to="." method="_on_c_keypress"]
+[connection signal="pressed" from="VBoxContainer/MarginContainer/Row1/C" to="VBoxContainer/MarginContainer/Row1/C" method="_on_pressed"]
+[connection signal="keypress" from="VBoxContainer/MarginContainer/Row1/D" to="." method="_on_a_keypress"]
+[connection signal="keypress" from="VBoxContainer/MarginContainer/Row1/D" to="." method="_on_d_keypress"]
+[connection signal="pressed" from="VBoxContainer/MarginContainer/Row1/D" to="VBoxContainer/MarginContainer/Row1/D" method="_on_pressed"]
+[connection signal="keypress" from="VBoxContainer/MarginContainer/Row1/E" to="." method="_on_a_keypress"]
+[connection signal="keypress" from="VBoxContainer/MarginContainer/Row1/E" to="." method="_on_e_keypress"]
+[connection signal="pressed" from="VBoxContainer/MarginContainer/Row1/E" to="VBoxContainer/MarginContainer/Row1/E" method="_on_pressed"]
+[connection signal="keypress" from="VBoxContainer/MarginContainer/Row1/F" to="." method="_on_a_keypress"]
+[connection signal="keypress" from="VBoxContainer/MarginContainer/Row1/F" to="." method="_on_f_keypress"]
+[connection signal="pressed" from="VBoxContainer/MarginContainer/Row1/F" to="VBoxContainer/MarginContainer/Row1/F" method="_on_pressed"]
+[connection signal="keypress" from="VBoxContainer/MarginContainer/Row1/G" to="." method="_on_g_keypress"]
+[connection signal="keypress" from="VBoxContainer/MarginContainer/Row1/G" to="." method="_on_a_keypress"]
+[connection signal="pressed" from="VBoxContainer/MarginContainer/Row1/G" to="VBoxContainer/MarginContainer/Row1/G" method="_on_pressed"]
+[connection signal="keypress" from="VBoxContainer/MarginContainer/Row1/H" to="." method="_on_h_keypress"]
+[connection signal="keypress" from="VBoxContainer/MarginContainer/Row1/H" to="." method="_on_a_keypress"]
+[connection signal="pressed" from="VBoxContainer/MarginContainer/Row1/H" to="VBoxContainer/MarginContainer/Row1/H" method="_on_pressed"]
+[connection signal="keypress" from="VBoxContainer/MarginContainer/Row1/I" to="." method="_on_i_keypress"]
+[connection signal="keypress" from="VBoxContainer/MarginContainer/Row1/I" to="." method="_on_a_keypress"]
+[connection signal="pressed" from="VBoxContainer/MarginContainer/Row1/I" to="VBoxContainer/MarginContainer/Row1/I" method="_on_pressed"]
+[connection signal="keypress" from="VBoxContainer/MarginContainer/Row1/J" to="." method="_on_j_keypress"]
+[connection signal="keypress" from="VBoxContainer/MarginContainer/Row1/J" to="." method="_on_a_keypress"]
+[connection signal="pressed" from="VBoxContainer/MarginContainer/Row1/J" to="VBoxContainer/MarginContainer/Row1/J" method="_on_pressed"]
+[connection signal="keypress" from="VBoxContainer/MarginContainer2/Row2/K" to="." method="_on_a_keypress"]
+[connection signal="pressed" from="VBoxContainer/MarginContainer2/Row2/K" to="VBoxContainer/MarginContainer2/Row2/K" method="_on_pressed"]
+[connection signal="keypress" from="VBoxContainer/MarginContainer2/Row2/L" to="." method="_on_a_keypress"]
+[connection signal="pressed" from="VBoxContainer/MarginContainer2/Row2/L" to="VBoxContainer/MarginContainer2/Row2/L" method="_on_pressed"]
+[connection signal="keypress" from="VBoxContainer/MarginContainer2/Row2/M" to="." method="_on_a_keypress"]
+[connection signal="pressed" from="VBoxContainer/MarginContainer2/Row2/M" to="VBoxContainer/MarginContainer2/Row2/M" method="_on_pressed"]
+[connection signal="keypress" from="VBoxContainer/MarginContainer2/Row2/N" to="." method="_on_a_keypress"]
+[connection signal="pressed" from="VBoxContainer/MarginContainer2/Row2/N" to="VBoxContainer/MarginContainer2/Row2/N" method="_on_pressed"]
+[connection signal="keypress" from="VBoxContainer/MarginContainer2/Row2/O" to="." method="_on_a_keypress"]
+[connection signal="pressed" from="VBoxContainer/MarginContainer2/Row2/O" to="VBoxContainer/MarginContainer2/Row2/O" method="_on_pressed"]
+[connection signal="keypress" from="VBoxContainer/MarginContainer2/Row2/P" to="." method="_on_a_keypress"]
+[connection signal="pressed" from="VBoxContainer/MarginContainer2/Row2/P" to="VBoxContainer/MarginContainer2/Row2/P" method="_on_pressed"]
+[connection signal="keypress" from="VBoxContainer/MarginContainer2/Row2/Q" to="." method="_on_a_keypress"]
+[connection signal="pressed" from="VBoxContainer/MarginContainer2/Row2/Q" to="VBoxContainer/MarginContainer2/Row2/Q" method="_on_pressed"]
+[connection signal="keypress" from="VBoxContainer/MarginContainer2/Row2/R" to="." method="_on_a_keypress"]
+[connection signal="pressed" from="VBoxContainer/MarginContainer2/Row2/R" to="VBoxContainer/MarginContainer2/Row2/R" method="_on_pressed"]
+[connection signal="keypress" from="VBoxContainer/MarginContainer2/Row2/S" to="." method="_on_a_keypress"]
+[connection signal="pressed" from="VBoxContainer/MarginContainer2/Row2/S" to="VBoxContainer/MarginContainer2/Row2/S" method="_on_pressed"]
+[connection signal="keypress" from="VBoxContainer/MarginContainer3/Row3/T" to="." method="_on_a_keypress"]
+[connection signal="pressed" from="VBoxContainer/MarginContainer3/Row3/T" to="VBoxContainer/MarginContainer3/Row3/T" method="_on_pressed"]
+[connection signal="keypress" from="VBoxContainer/MarginContainer3/Row3/U" to="." method="_on_a_keypress"]
+[connection signal="pressed" from="VBoxContainer/MarginContainer3/Row3/U" to="VBoxContainer/MarginContainer3/Row3/U" method="_on_pressed"]
+[connection signal="keypress" from="VBoxContainer/MarginContainer3/Row3/V" to="." method="_on_a_keypress"]
+[connection signal="pressed" from="VBoxContainer/MarginContainer3/Row3/V" to="VBoxContainer/MarginContainer3/Row3/V" method="_on_pressed"]
+[connection signal="keypress" from="VBoxContainer/MarginContainer3/Row3/W" to="." method="_on_a_keypress"]
+[connection signal="pressed" from="VBoxContainer/MarginContainer3/Row3/W" to="VBoxContainer/MarginContainer3/Row3/W" method="_on_pressed"]
+[connection signal="keypress" from="VBoxContainer/MarginContainer3/Row3/X" to="." method="_on_a_keypress"]
+[connection signal="pressed" from="VBoxContainer/MarginContainer3/Row3/X" to="VBoxContainer/MarginContainer3/Row3/X" method="_on_pressed"]
+[connection signal="keypress" from="VBoxContainer/MarginContainer3/Row3/Y" to="." method="_on_a_keypress"]
+[connection signal="pressed" from="VBoxContainer/MarginContainer3/Row3/Y" to="VBoxContainer/MarginContainer3/Row3/Y" method="_on_pressed"]
+[connection signal="keypress" from="VBoxContainer/MarginContainer3/Row3/Z" to="." method="_on_a_keypress"]
+[connection signal="pressed" from="VBoxContainer/MarginContainer3/Row3/Z" to="VBoxContainer/MarginContainer3/Row3/Z" method="_on_pressed"]

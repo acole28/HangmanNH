@@ -1,0 +1,74 @@
+[gd_scene load_steps=8 format=3 uid="uid://4xe3tyd8dplc"]
+
+[ext_resource type="Texture2D" uid="uid://bijmd18a1udcu" path="res://img1.wallspic.com-azure-ocean-light_blue-coastal_and_oceanic_landforms-wind_wave-4623x3117 (1).jpg" id="1_85cma"]
+[ext_resource type="Texture2D" uid="uid://bftugjh8ea5nc" path="res://pirateShip.png" id="2_yr2jo"]
+[ext_resource type="Texture2D" uid="uid://cp5y68vav7api" path="res://ocean-clipart-transparent-4.png" id="3_uqgdw"]
+
+[sub_resource type="Animation" id="Animation_kh2sj"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-0.141372]
+}
+
+[sub_resource type="Animation" id="Animation_t2pb3"]
+resource_name = "rocking"
+length = 4.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1, 1.5, 2, 2.6, 3, 3.5, 4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [-0.141372, -0.0610865, 0.0698132, 0.10472, 0.0555015, 0.0, -0.0403919, -0.10821, -0.141372]
+}
+
+[sub_resource type="Animation" id="Animation_5qx5q"]
+resource_name = "sinking"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ip6ik"]
+_data = {
+"RESET": SubResource("Animation_kh2sj"),
+"rocking": SubResource("Animation_t2pb3"),
+"sinking": SubResource("Animation_5qx5q")
+}
+
+[node name="TextureRect" type="TextureRect"]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_85cma")
+expand_mode = 2
+
+[node name="PirateShip" type="Sprite2D" parent="."]
+position = Vector2(600, 384.29)
+rotation = -0.141372
+scale = Vector2(0.227083, 0.244169)
+texture = ExtResource("2_yr2jo")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="PirateShip"]
+libraries = {
+"": SubResource("AnimationLibrary_ip6ik")
+}
+
+[node name="Ocean-clipart-transparent-4" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(576, 568)
+scale = Vector2(0.515, 0.55)
+texture = ExtResource("3_uqgdw")

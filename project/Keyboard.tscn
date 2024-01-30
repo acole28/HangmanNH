@@ -1,0 +1,757 @@
+[gd_scene load_steps=7 format=3 uid="uid://b8nyo0g23pouq"]
+
+[ext_resource type="FontFile" uid="uid://cr734us8lknee" path="res://kenney_ui-pack/Font/GOTHICB.TTF" id="1_my2j7"]
+[ext_resource type="Script" path="res://Keyboard.gd" id="1_psddl"]
+[ext_resource type="Script" path="res://KeyboardKey.gd" id="1_wuqam"]
+
+[sub_resource type="Theme" id="Theme_ocuj6"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_b4a2k"]
+font = ExtResource("1_my2j7")
+font_size = 35
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y1b4e"]
+size = Vector2(40, 48)
+
+[node name="Keyboard" type="Control"]
+layout_mode = 3
+anchor_left = 0.028
+anchor_top = 0.5
+anchor_right = 0.972
+anchor_bottom = 0.951
+offset_left = -32.256
+offset_top = -4.0
+offset_right = 32.256
+offset_bottom = 31.752
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_psddl")
+metadata/_edit_use_anchors_ = true
+
+[node name="A" type="Button" parent="." groups=["KeyboardKey"]]
+layout_mode = 2
+anchor_left = 0.131944
+anchor_top = 0.121951
+anchor_right = 0.174479
+anchor_bottom = 0.301829
+theme = SubResource("Theme_ocuj6")
+theme_override_fonts/font = ExtResource("1_my2j7")
+theme_override_font_sizes/font_size = 35
+text = "A"
+script = ExtResource("1_wuqam")
+letter = "a"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="A"]
+visible = false
+offset_left = 6.48771
+offset_right = 32.4877
+offset_bottom = 47.0
+text = "A"
+label_settings = SubResource("LabelSettings_b4a2k")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="A"]
+visible = false
+position = Vector2(20, 24)
+shape = SubResource("RectangleShape2D_y1b4e")
+
+[node name="Polygon2D" type="Polygon2D" parent="A"]
+z_index = -2
+color = Color(0.219608, 0.286275, 0.231373, 0.509804)
+polygon = PackedVector2Array(0, 48, 0, 0, 40, 0, 40, 48)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.146
+anchor_top = 0.122
+anchor_right = 0.889
+anchor_bottom = 0.927
+offset_left = -136.192
+offset_top = -24.016
+offset_right = 95.8719
+offset_bottom = -0.0559998
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="B" type="Area2D" parent="VBoxContainer/HBoxContainer" groups=["KeyboardKey"]]
+position = Vector2(200, 24)
+scale = Vector2(1.2331, 1.2331)
+script = ExtResource("1_wuqam")
+letter = "b"
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/B"]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "B"
+label_settings = SubResource("LabelSettings_b4a2k")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="VBoxContainer/HBoxContainer/B"]
+visible = false
+position = Vector2(20, 24)
+shape = SubResource("RectangleShape2D_y1b4e")
+
+[node name="Polygon2D" type="Polygon2D" parent="VBoxContainer/HBoxContainer/B"]
+z_index = -2
+color = Color(0.219608, 0.286275, 0.231373, 0.509804)
+polygon = PackedVector2Array(0, 48, 0, 0, 40, 0, 40, 48)
+
+[node name="C" type="Area2D" parent="VBoxContainer/HBoxContainer" groups=["KeyboardKey"]]
+position = Vector2(280, 24)
+scale = Vector2(1.2331, 1.2331)
+script = ExtResource("1_wuqam")
+letter = "c"
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/C"]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "C"
+label_settings = SubResource("LabelSettings_b4a2k")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="VBoxContainer/HBoxContainer/C"]
+visible = false
+position = Vector2(20, 24)
+shape = SubResource("RectangleShape2D_y1b4e")
+
+[node name="Polygon2D" type="Polygon2D" parent="VBoxContainer/HBoxContainer/C"]
+z_index = -2
+color = Color(0.219608, 0.286275, 0.231373, 0.509804)
+polygon = PackedVector2Array(0, 48, 0, 0, 40, 0, 40, 48)
+
+[node name="D" type="Area2D" parent="VBoxContainer/HBoxContainer" groups=["KeyboardKey"]]
+position = Vector2(360, 24)
+scale = Vector2(1.2331, 1.2331)
+script = ExtResource("1_wuqam")
+letter = "d"
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/D"]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "D"
+label_settings = SubResource("LabelSettings_b4a2k")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="VBoxContainer/HBoxContainer/D"]
+visible = false
+position = Vector2(20, 24)
+shape = SubResource("RectangleShape2D_y1b4e")
+
+[node name="Polygon2D" type="Polygon2D" parent="VBoxContainer/HBoxContainer/D"]
+z_index = -2
+color = Color(0.219608, 0.286275, 0.231373, 0.509804)
+polygon = PackedVector2Array(0, 48, 0, 0, 40, 0, 40, 48)
+
+[node name="E" type="Area2D" parent="VBoxContainer/HBoxContainer" groups=["KeyboardKey"]]
+position = Vector2(440, 24)
+scale = Vector2(1.2331, 1.2331)
+script = ExtResource("1_wuqam")
+letter = "e"
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/E"]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "E"
+label_settings = SubResource("LabelSettings_b4a2k")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="VBoxContainer/HBoxContainer/E"]
+visible = false
+position = Vector2(20, 24)
+shape = SubResource("RectangleShape2D_y1b4e")
+
+[node name="Polygon2D" type="Polygon2D" parent="VBoxContainer/HBoxContainer/E"]
+z_index = -2
+color = Color(0.219608, 0.286275, 0.231373, 0.509804)
+polygon = PackedVector2Array(0, 48, 0, 0, 40, 0, 40, 48)
+
+[node name="F" type="Area2D" parent="VBoxContainer/HBoxContainer" groups=["KeyboardKey"]]
+position = Vector2(520, 24)
+scale = Vector2(1.2331, 1.2331)
+script = ExtResource("1_wuqam")
+letter = "f"
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/F"]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "F"
+label_settings = SubResource("LabelSettings_b4a2k")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="VBoxContainer/HBoxContainer/F"]
+visible = false
+position = Vector2(20, 24)
+shape = SubResource("RectangleShape2D_y1b4e")
+
+[node name="Polygon2D" type="Polygon2D" parent="VBoxContainer/HBoxContainer/F"]
+z_index = -2
+color = Color(0.219608, 0.286275, 0.231373, 0.509804)
+polygon = PackedVector2Array(0, 48, 0, 0, 40, 0, 40, 48)
+
+[node name="G" type="Area2D" parent="VBoxContainer/HBoxContainer" groups=["KeyboardKey"]]
+position = Vector2(600, 24)
+scale = Vector2(1.2331, 1.2331)
+script = ExtResource("1_wuqam")
+letter = "g"
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/G"]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "G"
+label_settings = SubResource("LabelSettings_b4a2k")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="VBoxContainer/HBoxContainer/G"]
+visible = false
+position = Vector2(20, 24)
+shape = SubResource("RectangleShape2D_y1b4e")
+
+[node name="Polygon2D" type="Polygon2D" parent="VBoxContainer/HBoxContainer/G"]
+z_index = -2
+color = Color(0.219608, 0.286275, 0.231373, 0.509804)
+polygon = PackedVector2Array(0, 48, 0, 0, 40, 0, 40, 48)
+
+[node name="H" type="Area2D" parent="VBoxContainer/HBoxContainer" groups=["KeyboardKey"]]
+position = Vector2(680, 24)
+scale = Vector2(1.2331, 1.2331)
+script = ExtResource("1_wuqam")
+letter = "h"
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/H"]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "H"
+label_settings = SubResource("LabelSettings_b4a2k")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="VBoxContainer/HBoxContainer/H"]
+visible = false
+position = Vector2(20, 24)
+shape = SubResource("RectangleShape2D_y1b4e")
+
+[node name="Polygon2D" type="Polygon2D" parent="VBoxContainer/HBoxContainer/H"]
+z_index = -2
+color = Color(0.219608, 0.286275, 0.231373, 0.509804)
+polygon = PackedVector2Array(0, 48, 0, 0, 40, 0, 40, 48)
+
+[node name="I" type="Area2D" parent="VBoxContainer/HBoxContainer" groups=["KeyboardKey"]]
+position = Vector2(760, 24)
+scale = Vector2(1.2331, 1.2331)
+script = ExtResource("1_wuqam")
+letter = "i"
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/I"]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "I"
+label_settings = SubResource("LabelSettings_b4a2k")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="VBoxContainer/HBoxContainer/I"]
+visible = false
+position = Vector2(20, 24)
+shape = SubResource("RectangleShape2D_y1b4e")
+
+[node name="Polygon2D" type="Polygon2D" parent="VBoxContainer/HBoxContainer/I"]
+z_index = -2
+color = Color(0.219608, 0.286275, 0.231373, 0.509804)
+polygon = PackedVector2Array(0, 48, 0, 0, 40, 0, 40, 48)
+
+[node name="J" type="Area2D" parent="VBoxContainer/HBoxContainer" groups=["KeyboardKey"]]
+position = Vector2(840, 24)
+scale = Vector2(1.2331, 1.2331)
+script = ExtResource("1_wuqam")
+letter = "j"
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/J"]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "J"
+label_settings = SubResource("LabelSettings_b4a2k")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="VBoxContainer/HBoxContainer/J"]
+visible = false
+position = Vector2(20, 24)
+shape = SubResource("RectangleShape2D_y1b4e")
+
+[node name="Polygon2D" type="Polygon2D" parent="VBoxContainer/HBoxContainer/J"]
+z_index = -2
+color = Color(0.219608, 0.286275, 0.231373, 0.509804)
+polygon = PackedVector2Array(0, 48, 0, 0, 40, 0, 40, 48)
+
+[node name="K" type="Area2D" parent="VBoxContainer/HBoxContainer" groups=["KeyboardKey"]]
+position = Vector2(920, 24)
+scale = Vector2(1.2331, 1.2331)
+script = ExtResource("1_wuqam")
+letter = "k"
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/K"]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "K"
+label_settings = SubResource("LabelSettings_b4a2k")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="VBoxContainer/HBoxContainer/K"]
+visible = false
+position = Vector2(20, 24)
+shape = SubResource("RectangleShape2D_y1b4e")
+
+[node name="Polygon2D" type="Polygon2D" parent="VBoxContainer/HBoxContainer/K"]
+z_index = -2
+color = Color(0.219608, 0.286275, 0.231373, 0.509804)
+polygon = PackedVector2Array(0, 48, 0, 0, 40, 0, 40, 48)
+
+[node name="L" type="Area2D" parent="VBoxContainer/HBoxContainer" groups=["KeyboardKey"]]
+position = Vector2(136, 104)
+scale = Vector2(1.2331, 1.2331)
+script = ExtResource("1_wuqam")
+letter = "l"
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/L"]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "L"
+label_settings = SubResource("LabelSettings_b4a2k")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="VBoxContainer/HBoxContainer/L"]
+visible = false
+position = Vector2(20, 24)
+shape = SubResource("RectangleShape2D_y1b4e")
+
+[node name="Polygon2D" type="Polygon2D" parent="VBoxContainer/HBoxContainer/L"]
+z_index = -2
+color = Color(0.219608, 0.286275, 0.231373, 0.509804)
+polygon = PackedVector2Array(0, 48, 0, 0, 40, 0, 40, 48)
+
+[node name="M" type="Area2D" parent="VBoxContainer/HBoxContainer" groups=["KeyboardKey"]]
+position = Vector2(216, 104)
+scale = Vector2(1.2331, 1.2331)
+script = ExtResource("1_wuqam")
+letter = "m"
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/M"]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "M"
+label_settings = SubResource("LabelSettings_b4a2k")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="VBoxContainer/HBoxContainer/M"]
+visible = false
+position = Vector2(20, 24)
+shape = SubResource("RectangleShape2D_y1b4e")
+
+[node name="Polygon2D" type="Polygon2D" parent="VBoxContainer/HBoxContainer/M"]
+z_index = -2
+color = Color(0.219608, 0.286275, 0.231373, 0.509804)
+polygon = PackedVector2Array(0, 48, 0, 0, 40, 0, 40, 48)
+
+[node name="N" type="Area2D" parent="VBoxContainer/HBoxContainer" groups=["KeyboardKey"]]
+position = Vector2(296, 104)
+scale = Vector2(1.2331, 1.2331)
+script = ExtResource("1_wuqam")
+letter = "n"
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/N"]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "N"
+label_settings = SubResource("LabelSettings_b4a2k")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="VBoxContainer/HBoxContainer/N"]
+visible = false
+position = Vector2(20, 24)
+shape = SubResource("RectangleShape2D_y1b4e")
+
+[node name="Polygon2D" type="Polygon2D" parent="VBoxContainer/HBoxContainer/N"]
+z_index = -2
+color = Color(0.219608, 0.286275, 0.231373, 0.509804)
+polygon = PackedVector2Array(0, 48, 0, 0, 40, 0, 40, 48)
+
+[node name="O" type="Area2D" parent="VBoxContainer/HBoxContainer" groups=["KeyboardKey"]]
+position = Vector2(376, 104)
+scale = Vector2(1.2331, 1.2331)
+script = ExtResource("1_wuqam")
+letter = "o"
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/O"]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "O"
+label_settings = SubResource("LabelSettings_b4a2k")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="VBoxContainer/HBoxContainer/O"]
+visible = false
+position = Vector2(20, 24)
+shape = SubResource("RectangleShape2D_y1b4e")
+
+[node name="Polygon2D" type="Polygon2D" parent="VBoxContainer/HBoxContainer/O"]
+z_index = -2
+color = Color(0.219608, 0.286275, 0.231373, 0.509804)
+polygon = PackedVector2Array(0, 48, 0, 0, 40, 0, 40, 48)
+
+[node name="P" type="Area2D" parent="VBoxContainer/HBoxContainer" groups=["KeyboardKey"]]
+position = Vector2(456, 104)
+scale = Vector2(1.2331, 1.2331)
+script = ExtResource("1_wuqam")
+letter = "p"
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/P"]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "P"
+label_settings = SubResource("LabelSettings_b4a2k")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="VBoxContainer/HBoxContainer/P"]
+visible = false
+position = Vector2(20, 24)
+shape = SubResource("RectangleShape2D_y1b4e")
+
+[node name="Polygon2D" type="Polygon2D" parent="VBoxContainer/HBoxContainer/P"]
+z_index = -2
+color = Color(0.219608, 0.286275, 0.231373, 0.509804)
+polygon = PackedVector2Array(0, 48, 0, 0, 40, 0, 40, 48)
+
+[node name="Q" type="Area2D" parent="VBoxContainer/HBoxContainer" groups=["KeyboardKey"]]
+position = Vector2(536, 104)
+scale = Vector2(1.2331, 1.2331)
+script = ExtResource("1_wuqam")
+letter = "q"
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/Q"]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Q"
+label_settings = SubResource("LabelSettings_b4a2k")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="VBoxContainer/HBoxContainer/Q"]
+visible = false
+position = Vector2(20, 24)
+shape = SubResource("RectangleShape2D_y1b4e")
+
+[node name="Polygon2D" type="Polygon2D" parent="VBoxContainer/HBoxContainer/Q"]
+z_index = -2
+color = Color(0.219608, 0.286275, 0.231373, 0.509804)
+polygon = PackedVector2Array(0, 48, 0, 0, 40, 0, 40, 48)
+
+[node name="R" type="Area2D" parent="VBoxContainer/HBoxContainer" groups=["KeyboardKey"]]
+position = Vector2(616, 104)
+scale = Vector2(1.2331, 1.2331)
+script = ExtResource("1_wuqam")
+letter = "r"
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/R"]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "R"
+label_settings = SubResource("LabelSettings_b4a2k")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="VBoxContainer/HBoxContainer/R"]
+visible = false
+position = Vector2(20, 24)
+shape = SubResource("RectangleShape2D_y1b4e")
+
+[node name="Polygon2D" type="Polygon2D" parent="VBoxContainer/HBoxContainer/R"]
+z_index = -2
+color = Color(0.219608, 0.286275, 0.231373, 0.509804)
+polygon = PackedVector2Array(0, 48, 0, 0, 40, 0, 40, 48)
+
+[node name="S" type="Area2D" parent="VBoxContainer/HBoxContainer" groups=["KeyboardKey"]]
+position = Vector2(696, 104)
+scale = Vector2(1.2331, 1.2331)
+script = ExtResource("1_wuqam")
+letter = "s"
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/S"]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "S"
+label_settings = SubResource("LabelSettings_b4a2k")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="VBoxContainer/HBoxContainer/S"]
+visible = false
+position = Vector2(20, 24)
+shape = SubResource("RectangleShape2D_y1b4e")
+
+[node name="Polygon2D" type="Polygon2D" parent="VBoxContainer/HBoxContainer/S"]
+z_index = -2
+color = Color(0.219608, 0.286275, 0.231373, 0.509804)
+polygon = PackedVector2Array(0, 48, 0, 0, 40, 0, 40, 48)
+
+[node name="T" type="Area2D" parent="VBoxContainer/HBoxContainer" groups=["KeyboardKey"]]
+position = Vector2(776, 104)
+scale = Vector2(1.2331, 1.2331)
+script = ExtResource("1_wuqam")
+letter = "t"
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/T"]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "T"
+label_settings = SubResource("LabelSettings_b4a2k")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="VBoxContainer/HBoxContainer/T"]
+visible = false
+position = Vector2(20, 24)
+shape = SubResource("RectangleShape2D_y1b4e")
+
+[node name="Polygon2D" type="Polygon2D" parent="VBoxContainer/HBoxContainer/T"]
+z_index = -2
+color = Color(0.219608, 0.286275, 0.231373, 0.509804)
+polygon = PackedVector2Array(0, 48, 0, 0, 40, 0, 40, 48)
+
+[node name="U" type="Area2D" parent="VBoxContainer/HBoxContainer" groups=["KeyboardKey"]]
+position = Vector2(856, 104)
+scale = Vector2(1.2331, 1.2331)
+script = ExtResource("1_wuqam")
+letter = "u"
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/U"]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "U"
+label_settings = SubResource("LabelSettings_b4a2k")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="VBoxContainer/HBoxContainer/U"]
+visible = false
+position = Vector2(20, 24)
+shape = SubResource("RectangleShape2D_y1b4e")
+
+[node name="Polygon2D" type="Polygon2D" parent="VBoxContainer/HBoxContainer/U"]
+z_index = -2
+color = Color(0.219608, 0.286275, 0.231373, 0.509804)
+polygon = PackedVector2Array(0, 48, 0, 0, 40, 0, 40, 48)
+
+[node name="V" type="Area2D" parent="VBoxContainer/HBoxContainer" groups=["KeyboardKey"]]
+position = Vector2(336, 184)
+scale = Vector2(1.2331, 1.2331)
+script = ExtResource("1_wuqam")
+letter = "v"
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/V"]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "V"
+label_settings = SubResource("LabelSettings_b4a2k")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="VBoxContainer/HBoxContainer/V"]
+visible = false
+position = Vector2(20, 24)
+shape = SubResource("RectangleShape2D_y1b4e")
+
+[node name="Polygon2D" type="Polygon2D" parent="VBoxContainer/HBoxContainer/V"]
+z_index = -2
+color = Color(0.219608, 0.286275, 0.231373, 0.509804)
+polygon = PackedVector2Array(0, 48, 0, 0, 40, 0, 40, 48)
+
+[node name="W" type="Area2D" parent="VBoxContainer/HBoxContainer" groups=["KeyboardKey"]]
+position = Vector2(416, 184)
+scale = Vector2(1.2331, 1.2331)
+script = ExtResource("1_wuqam")
+letter = "w"
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/W"]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "W"
+label_settings = SubResource("LabelSettings_b4a2k")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="VBoxContainer/HBoxContainer/W"]
+visible = false
+position = Vector2(20, 24)
+shape = SubResource("RectangleShape2D_y1b4e")
+
+[node name="Polygon2D" type="Polygon2D" parent="VBoxContainer/HBoxContainer/W"]
+z_index = -2
+color = Color(0.219608, 0.286275, 0.231373, 0.509804)
+polygon = PackedVector2Array(0, 48, 0, 0, 40, 0, 40, 48)
+
+[node name="X" type="Area2D" parent="VBoxContainer/HBoxContainer" groups=["KeyboardKey"]]
+position = Vector2(496, 184)
+scale = Vector2(1.2331, 1.2331)
+script = ExtResource("1_wuqam")
+letter = "x"
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/X"]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "X"
+label_settings = SubResource("LabelSettings_b4a2k")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="VBoxContainer/HBoxContainer/X"]
+visible = false
+position = Vector2(20, 24)
+shape = SubResource("RectangleShape2D_y1b4e")
+
+[node name="Polygon2D" type="Polygon2D" parent="VBoxContainer/HBoxContainer/X"]
+z_index = -2
+color = Color(0.219608, 0.286275, 0.231373, 0.509804)
+polygon = PackedVector2Array(0, 48, 0, 0, 40, 0, 40, 48)
+
+[node name="Y" type="Area2D" parent="VBoxContainer/HBoxContainer" groups=["KeyboardKey"]]
+position = Vector2(576, 184)
+scale = Vector2(1.2331, 1.2331)
+script = ExtResource("1_wuqam")
+letter = "y"
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/Y"]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Y"
+label_settings = SubResource("LabelSettings_b4a2k")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="VBoxContainer/HBoxContainer/Y"]
+visible = false
+position = Vector2(20, 24)
+shape = SubResource("RectangleShape2D_y1b4e")
+
+[node name="Polygon2D" type="Polygon2D" parent="VBoxContainer/HBoxContainer/Y"]
+z_index = -2
+color = Color(0.219608, 0.286275, 0.231373, 0.509804)
+polygon = PackedVector2Array(0, 48, 0, 0, 40, 0, 40, 48)
+
+[node name="Z" type="Area2D" parent="VBoxContainer/HBoxContainer" groups=["KeyboardKey"]]
+position = Vector2(656, 184)
+scale = Vector2(1.2331, 1.2331)
+script = ExtResource("1_wuqam")
+letter = "z"
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/Z"]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Z"
+label_settings = SubResource("LabelSettings_b4a2k")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="VBoxContainer/HBoxContainer/Z"]
+visible = false
+position = Vector2(20, 24)
+shape = SubResource("RectangleShape2D_y1b4e")
+
+[node name="Polygon2D" type="Polygon2D" parent="VBoxContainer/HBoxContainer/Z"]
+z_index = -2
+color = Color(0.219608, 0.286275, 0.231373, 0.509804)
+polygon = PackedVector2Array(0, 48, 0, 0, 40, 0, 40, 48)
+
+[connection signal="keypress" from="A" to="." method="_on_a_keypress"]
+[connection signal="pressed" from="A" to="A" method="_on_pressed"]
+[connection signal="keypress" from="VBoxContainer/HBoxContainer/B" to="." method="_on_b_keypress"]
+[connection signal="mouse_entered" from="VBoxContainer/HBoxContainer/B" to="VBoxContainer/HBoxContainer/B" method="_on_mouse_entered"]
+[connection signal="keypress" from="VBoxContainer/HBoxContainer/C" to="." method="_on_c_keypress"]
+[connection signal="mouse_entered" from="VBoxContainer/HBoxContainer/C" to="VBoxContainer/HBoxContainer/C" method="_on_mouse_entered"]
+[connection signal="keypress" from="VBoxContainer/HBoxContainer/D" to="." method="_on_d_keypress"]
+[connection signal="mouse_entered" from="VBoxContainer/HBoxContainer/D" to="VBoxContainer/HBoxContainer/D" method="_on_mouse_entered"]
+[connection signal="keypress" from="VBoxContainer/HBoxContainer/E" to="." method="_on_e_keypress"]
+[connection signal="mouse_entered" from="VBoxContainer/HBoxContainer/E" to="VBoxContainer/HBoxContainer/E" method="_on_mouse_entered"]
+[connection signal="keypress" from="VBoxContainer/HBoxContainer/F" to="." method="_on_f_keypress"]
+[connection signal="mouse_entered" from="VBoxContainer/HBoxContainer/F" to="VBoxContainer/HBoxContainer/F" method="_on_mouse_entered"]
+[connection signal="keypress" from="VBoxContainer/HBoxContainer/G" to="." method="_on_g_keypress"]
+[connection signal="mouse_entered" from="VBoxContainer/HBoxContainer/G" to="VBoxContainer/HBoxContainer/G" method="_on_mouse_entered"]
+[connection signal="keypress" from="VBoxContainer/HBoxContainer/H" to="." method="_on_h_keypress"]
+[connection signal="mouse_entered" from="VBoxContainer/HBoxContainer/H" to="VBoxContainer/HBoxContainer/H" method="_on_mouse_entered"]
+[connection signal="keypress" from="VBoxContainer/HBoxContainer/I" to="." method="_on_i_keypress"]
+[connection signal="mouse_entered" from="VBoxContainer/HBoxContainer/I" to="VBoxContainer/HBoxContainer/I" method="_on_mouse_entered"]
+[connection signal="keypress" from="VBoxContainer/HBoxContainer/J" to="." method="_on_j_keypress"]
+[connection signal="mouse_entered" from="VBoxContainer/HBoxContainer/J" to="VBoxContainer/HBoxContainer/J" method="_on_mouse_entered"]
+[connection signal="keypress" from="VBoxContainer/HBoxContainer/K" to="." method="_on_k_keypress"]
+[connection signal="mouse_entered" from="VBoxContainer/HBoxContainer/K" to="VBoxContainer/HBoxContainer/K" method="_on_mouse_entered"]
+[connection signal="keypress" from="VBoxContainer/HBoxContainer/L" to="." method="_on_l_keypress"]
+[connection signal="mouse_entered" from="VBoxContainer/HBoxContainer/L" to="VBoxContainer/HBoxContainer/L" method="_on_mouse_entered"]
+[connection signal="keypress" from="VBoxContainer/HBoxContainer/M" to="." method="_on_m_keypress"]
+[connection signal="mouse_entered" from="VBoxContainer/HBoxContainer/M" to="VBoxContainer/HBoxContainer/M" method="_on_mouse_entered"]
+[connection signal="keypress" from="VBoxContainer/HBoxContainer/N" to="." method="_on_n_keypress"]
+[connection signal="mouse_entered" from="VBoxContainer/HBoxContainer/N" to="VBoxContainer/HBoxContainer/N" method="_on_mouse_entered"]
+[connection signal="keypress" from="VBoxContainer/HBoxContainer/O" to="." method="_on_o_keypress"]
+[connection signal="mouse_entered" from="VBoxContainer/HBoxContainer/O" to="VBoxContainer/HBoxContainer/O" method="_on_mouse_entered"]
+[connection signal="keypress" from="VBoxContainer/HBoxContainer/P" to="." method="_on_p_keypress"]
+[connection signal="mouse_entered" from="VBoxContainer/HBoxContainer/P" to="VBoxContainer/HBoxContainer/P" method="_on_mouse_entered"]
+[connection signal="keypress" from="VBoxContainer/HBoxContainer/Q" to="." method="_on_q_keypress"]
+[connection signal="mouse_entered" from="VBoxContainer/HBoxContainer/Q" to="VBoxContainer/HBoxContainer/Q" method="_on_mouse_entered"]
+[connection signal="keypress" from="VBoxContainer/HBoxContainer/R" to="." method="_on_r_keypress"]
+[connection signal="mouse_entered" from="VBoxContainer/HBoxContainer/R" to="VBoxContainer/HBoxContainer/R" method="_on_mouse_entered"]
+[connection signal="keypress" from="VBoxContainer/HBoxContainer/S" to="." method="_on_s_keypress"]
+[connection signal="mouse_entered" from="VBoxContainer/HBoxContainer/S" to="VBoxContainer/HBoxContainer/S" method="_on_mouse_entered"]
+[connection signal="keypress" from="VBoxContainer/HBoxContainer/T" to="." method="_on_t_keypress"]
+[connection signal="mouse_entered" from="VBoxContainer/HBoxContainer/T" to="VBoxContainer/HBoxContainer/T" method="_on_mouse_entered"]
+[connection signal="keypress" from="VBoxContainer/HBoxContainer/U" to="." method="_on_u_keypress"]
+[connection signal="mouse_entered" from="VBoxContainer/HBoxContainer/U" to="VBoxContainer/HBoxContainer/U" method="_on_mouse_entered"]
+[connection signal="keypress" from="VBoxContainer/HBoxContainer/V" to="." method="_on_v_keypress"]
+[connection signal="mouse_entered" from="VBoxContainer/HBoxContainer/V" to="VBoxContainer/HBoxContainer/V" method="_on_mouse_entered"]
+[connection signal="keypress" from="VBoxContainer/HBoxContainer/W" to="." method="_on_w_keypress"]
+[connection signal="mouse_entered" from="VBoxContainer/HBoxContainer/W" to="VBoxContainer/HBoxContainer/W" method="_on_mouse_entered"]
+[connection signal="keypress" from="VBoxContainer/HBoxContainer/X" to="." method="_on_x_keypress"]
+[connection signal="mouse_entered" from="VBoxContainer/HBoxContainer/X" to="VBoxContainer/HBoxContainer/X" method="_on_mouse_entered"]
+[connection signal="keypress" from="VBoxContainer/HBoxContainer/Y" to="." method="_on_y_keypress"]
+[connection signal="mouse_entered" from="VBoxContainer/HBoxContainer/Y" to="VBoxContainer/HBoxContainer/Y" method="_on_mouse_entered"]
+[connection signal="keypress" from="VBoxContainer/HBoxContainer/Z" to="." method="_on_z_keypress"]
+[connection signal="mouse_entered" from="VBoxContainer/HBoxContainer/Z" to="VBoxContainer/HBoxContainer/Z" method="_on_mouse_entered"]

@@ -1,0 +1,102 @@
+[gd_scene load_steps=7 format=3 uid="uid://e82nv8e1pdm2"]
+
+[ext_resource type="Script" path="res://DoraemonTheme.gd" id="1_a0474"]
+[ext_resource type="Texture2D" uid="uid://ch2aijho550js" path="res://NobitaStudying.jpg" id="1_jjmvc"]
+[ext_resource type="Texture2D" uid="uid://csjndlcag88h2" path="res://StackOfBooks.png" id="2_1btvv"]
+[ext_resource type="Texture2D" uid="uid://6nx1n6ro53j" path="res://pencilcup.png" id="2_apyj2"]
+[ext_resource type="Texture2D" uid="uid://qscp76kbjidr" path="res://lamp.png" id="3_bpvng"]
+[ext_resource type="Texture2D" uid="uid://64ed2t3n8vax" path="res://nobita-books-crying.webp" id="6_yfq01"]
+
+[node name="DoraemonTheme" type="Node" groups=["Guy"]]
+script = ExtResource("1_a0474")
+
+[node name="NobitaBG" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_jjmvc")
+expand_mode = 3
+
+[node name="stack of books" type="TextureRect" parent="NobitaBG"]
+visible = false
+layout_mode = 0
+offset_left = -43.0
+offset_top = 432.0
+offset_right = 557.0
+offset_bottom = 1032.0
+scale = Vector2(0.474943, 0.474943)
+texture = ExtResource("2_1btvv")
+
+[node name="stack of books2" type="TextureRect" parent="NobitaBG"]
+layout_mode = 0
+offset_left = 807.362
+offset_top = 453.281
+offset_right = 1407.36
+offset_bottom = 1053.28
+scale = Vector2(0.474943, 0.446285)
+texture = ExtResource("2_1btvv")
+
+[node name="stack of books3" type="TextureRect" parent="NobitaBG"]
+layout_mode = 0
+offset_left = 1083.36
+offset_top = 577.281
+offset_right = 1683.36
+offset_bottom = 1177.28
+rotation = 3.10679
+scale = Vector2(0.535112, 0.50244)
+texture = ExtResource("2_1btvv")
+flip_h = true
+flip_v = true
+
+[node name="stack of books4" type="TextureRect" parent="NobitaBG"]
+visible = false
+layout_mode = 0
+offset_left = 289.0
+offset_top = 563.0
+offset_right = 889.0
+offset_bottom = 1163.0
+rotation = 3.10679
+scale = Vector2(0.667862, 0.627084)
+texture = ExtResource("2_1btvv")
+flip_v = true
+
+[node name="stack of books5" type="TextureRect" parent="NobitaBG"]
+visible = false
+layout_mode = 0
+offset_left = 264.0
+offset_top = 385.0
+offset_right = 864.0
+offset_bottom = 985.0
+rotation = 0.141087
+scale = Vector2(0.764883, 0.534456)
+texture = ExtResource("2_1btvv")
+
+[node name="pencils" type="TextureRect" parent="NobitaBG"]
+layout_mode = 0
+offset_left = -134.0
+offset_top = 76.0
+offset_right = 353.0
+offset_bottom = 806.0
+scale = Vector2(0.887432, 0.968348)
+texture = ExtResource("2_apyj2")
+
+[node name="lamp" type="TextureRect" parent="NobitaBG"]
+layout_mode = 0
+offset_left = 716.0
+offset_top = 64.0
+offset_right = 1341.0
+offset_bottom = 790.0
+scale = Vector2(0.902059, 0.902059)
+texture = ExtResource("3_bpvng")
+
+[node name="Crying" type="TextureRect" parent="."]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_yfq01")
+metadata/_edit_use_anchors_ = true

@@ -1,0 +1,807 @@
+[
+	{
+		"category": "feeling",
+		"words": [
+			"fine",
+			"good",
+			"great",
+			"happy",
+			"sad",
+			"tired",
+			"sleepy",
+			"busy",
+			"hungry",
+			"thirsty"
+		]
+	},
+	{
+		"category": "weather",
+		"words": [
+			"sunny",
+			"cloudy",
+			"rainy",
+			"snowy",
+			"cold",
+			"hot"
+		]
+	},
+	{
+		"category": "numbers",
+		"words": [
+			"one",
+			"two",
+			"three",
+			"four",
+			"five",
+			"six",
+			"seven",
+			"eight",
+			"nine",
+			"ten"
+		]
+	},
+	{
+		"category": "colors",
+		"words": [
+			"black",
+			"blue",
+			"brown",
+			"green",
+			"orange",
+			"pink",
+			"purple",
+			"red",
+			"white",
+			"yellow"
+		]
+	},
+	{
+		"category": "shapes",
+		"words": [
+			"circle",
+			"cross",
+			"diamond",
+			"heart",
+			"rectangle",
+			"square",
+			"star",
+			"triangle"
+		]
+	},
+	{
+		"category": "sports",
+		"words": [
+			"baseball",
+			"softball",
+			"basketball",
+			"volleyball",
+			"dodgeball",
+			"soccer",
+			"tennis",
+			"table tennis",
+			"badminton",
+			"track and field",
+			"swimming",
+			"skating",
+			"skating",
+			"skiing",
+			"archery",
+			"canoe",
+			"judo",
+			"rugby",
+			"weightlifting",
+			"figure skating",
+			"ski jumping",
+			"athletics",
+			"wheelchair tennis"
+		]
+	},
+	{
+		"category": "food",
+		"words": [
+			"rice",
+			"rice ball",
+			"curry and rice",
+			"grilled fish",
+			"bread",
+			"sandwhich",
+			"pancakes",
+			"pizza",
+			"hamburger",
+			"hot dog",
+			"French fries",
+			"sausage",
+			"steak",
+			"omelet",
+			"spaghetti",
+			"pie",
+			"salad",
+			"soup"
+		]
+	},
+	{
+		"category": "drinks",
+		"words": [
+			"coffee",
+			"tea",
+			"green tea",
+			"juice",
+			"soda",
+			"milk",
+			"water",
+			"mineral water"
+		]
+	},
+	{
+		"category": "dessert",
+		"words": [
+			"cake",
+			"parfait",
+			"pudding",
+			"ice cream",
+			"shaved ice",
+			"chocolate",
+			"popcorn",
+			"snack food"
+		]
+	},
+	{
+		"category": "fruit",
+		"words": [
+			"apple",
+			"banana",
+			"bean",
+			"broccoli",
+			"cabbage",
+			"carrot",
+			"cherry",
+			"corn",
+			"cucumber",
+			"eggplant",
+			"grapes",
+			"green pepper",
+			"kiwi fruit",
+			"lemon",
+			"lettuce",
+			"melon",
+			"mushroom",
+			"nut",
+			"onion",
+			"orange",
+			"peach",
+			"pineapple",
+			"potato",
+			"spinach",
+			"strawberry",
+			"tomato",
+			"watermelon"
+		]
+	},
+	{
+		"category": "ingredients",
+		"words": [
+			"beef",
+			"chicken",
+			"pork",
+			"bacon",
+			"ham",
+			"cheese",
+			"egg",
+			"fish",
+			"salmon",
+			"octopus"
+		]
+	},
+	{
+		"category": "meals",
+		"words": [
+			"breakfast",
+			"lunch",
+			"dinner"
+		]
+	},
+	{
+		"category": "flavors",
+		"words": [
+			"bitter",
+			"sweet",
+			"salty",
+			"sour",
+			"spicy",
+			"delicious",
+			"soft",
+			"hard",
+			"cold",
+			"hot"
+		]
+	},
+	{
+		"category": "animals",
+		"words": [
+			"bear",
+			"polar bear",
+			"elephant",
+			"tiger",
+			"lion",
+			"zebra",
+			"gorilla",
+			"monkey",
+			"horse",
+			"camel",
+			"cow",
+			"sheep",
+			"pig",
+			"panda",
+			"koala",
+			"penguin",
+			"dog",
+			"cat",
+			"rabbit",
+			"mouse",
+			"snake",
+			"frog",
+			"bird",
+			"eagle"
+		]
+	},
+	{
+		"category": "nature",
+		"words": [
+			"desert",
+			"forest",
+			"island",
+			"lake",
+			"mountain",
+			"pond",
+			"river",
+			"savanna",
+			"sea",
+			"wetlands",
+			"flower",
+			"tree"
+		]
+	},
+	{
+		"category": "sea animals",
+		"words": [
+			"whale",
+			"shark",
+			"dolphin",
+			"sea turtle",
+			"fish",
+			"squid",
+			"jellyfish"
+		]
+	},
+	{
+		"category": "bugs",
+		"words": [
+			"ant",
+			"butterfly",
+			"grasshopper"
+		]
+	},
+	{
+		"category": "months",
+		"words": [
+			"January",
+			"February",
+			"March",
+			"April",
+			"May",
+			"June",
+			"July",
+			"August",
+			"September",
+			"October",
+			"November",
+			"December"
+		]
+	},
+	{
+		"category": "dates",
+		"words": [
+			"first",
+			"second",
+			"third",
+			"fourth",
+			"fifth",
+			"sixth"
+		]
+	},
+	{
+		"category": "time of day",
+		"words": [
+			"morning",
+			"afternoon",
+			"evening",
+			"night"
+		]
+	},
+	{
+		"category": "seasons",
+		"words": [
+			"spring",
+			"summer",
+			"fall",
+			"winter"
+		]
+	},
+	{
+		"category": "countries",
+		"words": [
+			"America",
+			"Australia",
+			"Brazil",
+			"Canada",
+			"China",
+			"Egypt",
+			"France",
+			"Germany",
+			"Ghana",
+			"India",
+			"Italy",
+			"Japan",
+			"Kenya",
+			"Korea",
+			"Mongolia",
+			"Morocco",
+			"Norway",
+			"Peru",
+			"Russia",
+			"Singapore",
+			"Spain",
+			"Sweden",
+			"Thailand",
+			"Turkey",
+			"United Kingdom",
+			"Vietnam"
+		]
+	},
+	{
+		"category": "family",
+		"words": [
+			"grandfather",
+			"grandmother",
+			"mother",
+			"father",
+			"brother",
+			"sister",
+			"me"
+		]
+	},
+	{
+		"category": "people",
+		"words": [
+			"boy",
+			"girl",
+			"friends",
+			"classmates"
+		]
+	},
+	{
+		"category": "personality",
+		"words": [
+			"active",
+			"brave",
+			"friendly",
+			"funny",
+			"gentle",
+			"kind",
+			"strong"
+		]
+	},
+	{
+		"category": "action words",
+		"words": [
+			"sing",
+			"run",
+			"jump",
+			"dance",
+			"swim",
+			"skate",
+			"go",
+			"stop",
+			"turn",
+			"eat",
+			"drink",
+			"cook",
+			"bake",
+			"clean",
+			"buy",
+			"ride",
+			"travel",
+			"study",
+			"teach",
+			"speak",
+			"listen",
+			"read",
+			"write",
+			"talk",
+			"draw"
+		]
+	},
+	{
+		"category": "action words 2",
+		"words": [
+			"like",
+			"want",
+			"look",
+			"see",
+			"play",
+			"practice",
+			"try",
+			"enjoy",
+			"get",
+			"have",
+			"make",
+			"help",
+			"join",
+			"live",
+			"think"
+		]
+	},
+	{
+		"category": "past tense",
+		"words": [
+			"went",
+			"ate",
+			"saw",
+			"enjoyed",
+			"had"
+		]
+	},
+	{
+		"category": "activities",
+		"words": [
+			"get up",
+			"brush my teeth",
+			"have breakfast",
+			"go to school",
+			"study English",
+			"have lunch",
+			"go home",
+			"play soccer",
+			"walk my dog",
+			"do my homework",
+			"have dinner",
+			"wash the dishes",
+			"take a bath",
+			"watch TV",
+			"go to bed"
+		]
+	},
+	{
+		"category": "frequency",
+		"words": [
+			"always",
+			"usually",
+			"sometimes",
+			"never"
+		]
+	},
+	{
+		"category": "clothes",
+		"words": [
+			"shirt",
+			"vest",
+			"sweater",
+			"uniform",
+			"pants",
+			"cap",
+			"hat",
+			"gloves",
+			"socks"
+		]
+	},
+	{
+		"category": "body",
+		"words": [
+			"head",
+			"face",
+			"eye",
+			"ear",
+			"shoulder",
+			"nose",
+			"mouth",
+			"teeth",
+			"hand",
+			"knee",
+			"leg",
+			"toe"
+		]
+	},
+	{
+		"category": "buildings",
+		"words": [
+			"house",
+			"park",
+			"library",
+			"museum",
+			"city hall",
+			"hospital",
+			"bus stop",
+			"station",
+			"police station",
+			"fire station",
+			"gas station",
+			"post office",
+			"bookstore",
+			"department store",
+			"restaurant",
+			"supermarket",
+			"flower shop",
+			"castle",
+			"shrine",
+			"temple",
+			"amusement park",
+			"aquarium",
+			"stadium",
+			"zoo",
+			"bridge",
+			"street"
+		]
+	},
+	{
+		"category": "directions",
+		"words": [
+			"go straight",
+			"turn right",
+			"turn left",
+			"block",
+			"see"
+		]
+	},
+	{
+		"category": "position",
+		"words": [
+			"by",
+			"in",
+			"on",
+			"under"
+		]
+	},
+	{
+		"category": "vehicles",
+		"words": [
+			"bus",
+			"car",
+			"taxi",
+			"truck",
+			"train",
+			"subway",
+			"ship",
+			"boat",
+			"airplane",
+			"bike"
+		]
+	},
+	{
+		"category": "subjects",
+		"words": [
+			"English",
+			"Japanese",
+			"calligraphy",
+			"social studies",
+			"math",
+			"science",
+			"music",
+			"arts and crafts",
+			"home economics",
+			"PE",
+			"moral education"
+		]
+	},
+	{
+		"category": "school",
+		"words": [
+			"classroom",
+			"library",
+			"music room",
+			"gym",
+			"playground",
+			"swimming pool",
+			"entrance",
+			"restroom"
+		]
+	},
+	{
+		"category": "stationary",
+		"words": [
+			"crayon",
+			"marker",
+			"pen",
+			"pencil",
+			"pencil case",
+			"eraser",
+			"ruler",
+			"glue",
+			"scissors",
+			"stapler",
+			"notebook"
+		]
+	},
+	{
+		"category": "instruments",
+		"words": [
+			"recorder",
+			"harmonica",
+			"triangle",
+			"piano",
+			"guitar",
+			"violin",
+			"drum",
+			"xylophone"
+		]
+	},
+	{
+		"category": "objects",
+		"words": [
+			"ball",
+			"bat",
+			"racket",
+			"bag",
+			"plastic bag",
+			"basket",
+			"box",
+			"cup",
+			"watch",
+			"clock",
+			"book",
+			"textbook",
+			"comic book",
+			"computer",
+			"calendar",
+			"map",
+			"picture",
+			"umbrella",
+			"present",
+			"treasure",
+			"desk",
+			"chair",
+			"wheelchair",
+			"table",
+			"bath",
+			"bed",
+			"wall",
+			"window"
+		]
+	},
+	{
+		"category": "activities",
+		"words": [
+			"camping",
+			"fishing",
+			"hiking",
+			"shopping",
+			"reading",
+			"running",
+			"jogging",
+			"kite flying",
+			"top spinning",
+			"cards",
+			"tag",
+			"jump rope",
+			"unicycle"
+		]
+	},
+	{
+		"category": "school events",
+		"words": [
+			"field trip",
+			"school trip",
+			"chorus contest",
+			"drama festival",
+			"music festival",
+			"school festival",
+			"volunteer day",
+			"sports day",
+			"swimming meet",
+			"fire drill",
+			"summer vacation",
+			"graduation ceremony"
+		]
+	},
+	{
+		"category": "yearly events",
+		"words": [
+			"birthday",
+			"Star Festival",
+			"fireworks",
+			"Halloween",
+			"Christmas",
+			"New Year's Day",
+			"Dolls' Festival",
+			"April Fool's Day",
+			"Children's Day",
+			"New Year's Eve"
+		]
+	},
+	{
+		"category": "condition",
+		"words": [
+			"big",
+			"small",
+			"long",
+			"short",
+			"new",
+			"old",
+			"easy",
+			"difficult",
+			"same",
+			"different",
+			"fast",
+			"slow"
+		]
+	},
+	{
+		"category": "jobs",
+		"words": [
+			"artist",
+			"musician",
+			"singer",
+			"comedian",
+			"doctor",
+			"nurse",
+			"dentist",
+			"vet",
+			"zookeeper",
+			"cook",
+			"baker",
+			"florist",
+			"farmer",
+			"police officer",
+			"fire fighter",
+			"pilot",
+			"flight attendant",
+			"bus driver",
+			"astronaut",
+			"teacher",
+			"scientist",
+			"programmer",
+			"baseball player",
+			"soccer player",
+			"figure skater"
+		]
+	},
+	{
+		"category": "clubs",
+		"words": [
+			"baseball team",
+			"softball team",
+			"basketball team",
+			"volleyball team",
+			"soccer team",
+			"tennis team",
+			"badminton team",
+			"gymnastics team",
+			"art club",
+			"drama club",
+			"cooking club",
+			"newspaper club",
+			"photography club",
+			"brass band",
+			"chorus"
+		]
+	},
+	{
+		"category": "state",
+		"words": [
+			"good",
+			"great",
+			"nice",
+			"fantastic",
+			"wonderful",
+			"beautiful",
+			"cool",
+			"cute",
+			"favorite",
+			"interesting",
+			"exciting",
+			"famous",
+			"popular",
+			"international",
+			"fun"
+		]
+	}
+]

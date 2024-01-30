@@ -1,0 +1,91 @@
+[gd_scene load_steps=10 format=3 uid="uid://b8nr45syagapw"]
+
+[ext_resource type="Texture2D" uid="uid://d1uktjnan0er8" path="res://kenney_ui-pack/PNG/blue_button00.png" id="1_dkw4a"]
+[ext_resource type="Script" path="res://Menu.gd" id="1_np4uo"]
+[ext_resource type="Texture2D" uid="uid://dkpbx4bfsklsi" path="res://AlphabetBG2.jpeg" id="2_b0a1x"]
+[ext_resource type="Texture2D" uid="uid://d5sjdervx5rc" path="res://kenney_ui-pack/PNG/blue_button01.png" id="2_rsjwb"]
+[ext_resource type="Script" path="res://PlayButton.gd" id="3_pwule"]
+[ext_resource type="FontFile" uid="uid://ca7w0gcs3a2r1" path="res://kenney_ui-pack/Font/GOTHIC.TTF" id="5_j3l4s"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ccsux"]
+font_size = 70
+
+[sub_resource type="LabelSettings" id="LabelSettings_0re2u"]
+font_size = 40
+
+[sub_resource type="Theme" id="Theme_5ge7t"]
+default_font = ExtResource("5_j3l4s")
+default_font_size = 24
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_np4uo")
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_b0a1x")
+expand_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Welcome" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Let's Guess the Word!"
+label_settings = SubResource("LabelSettings_ccsux")
+horizontal_alignment = 1
+
+[node name="VBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+alignment = 1
+
+[node name="PlayButton" type="TextureButton" parent="VBoxContainer/VBoxContainer"]
+layout_mode = 2
+action_mode = 0
+texture_normal = ExtResource("1_dkw4a")
+texture_pressed = ExtResource("2_rsjwb")
+stretch_mode = 0
+script = ExtResource("3_pwule")
+
+[node name="Label" type="Label" parent="VBoxContainer/VBoxContainer/PlayButton"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.861
+offset_bottom = 0.899994
+grow_horizontal = 2
+grow_vertical = 2
+text = "Play"
+label_settings = SubResource("LabelSettings_0re2u")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CategoryOptions" type="OptionButton" parent="VBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 2
+theme = SubResource("Theme_5ge7t")
+text_overrun_behavior = 1
+icon_alignment = 1
+
+[connection signal="pressed" from="VBoxContainer/VBoxContainer/PlayButton" to="VBoxContainer/VBoxContainer/PlayButton" method="_on_pressed"]
+[connection signal="item_selected" from="VBoxContainer/VBoxContainer/CategoryOptions" to="." method="_on_category_options_item_selected"]

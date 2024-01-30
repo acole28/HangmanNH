@@ -1,0 +1,317 @@
+[gd_scene load_steps=18 format=3 uid="uid://c88xqhbqefmaq"]
+
+[ext_resource type="Script" path="res://Hangman.gd" id="1_d5agv"]
+[ext_resource type="FontFile" uid="uid://cr734us8lknee" path="res://kenney_ui-pack/Font/GOTHICB.TTF" id="2_fkg2x"]
+[ext_resource type="FontFile" uid="uid://ca7w0gcs3a2r1" path="res://kenney_ui-pack/Font/GOTHIC.TTF" id="3_rrywv"]
+[ext_resource type="Texture2D" uid="uid://c5mnq3hnfob36" path="res://kenney_ui-pack/PNG/green_circle.png" id="4_cywgj"]
+[ext_resource type="Texture2D" uid="uid://cncwf2w1rp4h7" path="res://kenney_ui-pack/PNG/red_cross.png" id="5_gui1b"]
+[ext_resource type="PackedScene" uid="uid://cnqgmo0qgh55x" path="res://TouchKeyboard.tscn" id="6_4vfis"]
+[ext_resource type="Texture2D" uid="uid://d04sxfa0a2tak" path="res://kenney_ui-pack/PNG/green_button00.png" id="7_nk38n"]
+[ext_resource type="Texture2D" uid="uid://dm2ikfv4fj80s" path="res://kenney_ui-pack/PNG/green_sliderUp.png" id="8_51bdc"]
+[ext_resource type="Texture2D" uid="uid://bos4y34a4kxre" path="res://keyboard.webp" id="9_y24nj"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_seain"]
+font = ExtResource("2_fkg2x")
+font_size = 35
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bgdyk"]
+size = Vector2(248, 56)
+
+[sub_resource type="LabelSettings" id="LabelSettings_qcn5p"]
+font = ExtResource("3_rrywv")
+font_size = 40
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_74xuk"]
+font = ExtResource("3_rrywv")
+font_size = 65
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_wo0l4"]
+font = ExtResource("2_fkg2x")
+font_size = 50
+font_color = Color(1, 0.109804, 0.243137, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_t7j6f"]
+font_size = 100
+
+[sub_resource type="Shortcut" id="Shortcut_h2snd"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_kywmv"]
+font = ExtResource("2_fkg2x")
+font_size = 35
+
+[node name="Game" type="Control"]
+custom_minimum_size = Vector2(75, 0)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_d5agv")
+
+[node name="Theme" type="CanvasLayer" parent="."]
+layer = -6
+
+[node name="Category" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.744
+anchor_top = 0.018
+anchor_right = 0.965
+anchor_bottom = 0.1
+offset_left = 7.67993
+offset_top = -2.97602
+offset_right = 9.21594
+offset_bottom = 0.247986
+label_settings = SubResource("LabelSettings_seain")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Polygon2D" type="Polygon2D" parent="Category"]
+z_index = -1
+position = Vector2(86.4389, 1.08521)
+scale = Vector2(0.983252, 1.0692)
+color = Color(0.403922, 0.513726, 0.584314, 0.498039)
+polygon = PackedVector2Array(-87, -1, 197.769, -0.999969, 197.769, 58.8576, -86.9999, 58.8576)
+
+[node name="Hint" type="Area2D" parent="Category"]
+position = Vector2(104, -8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Category/Hint"]
+position = Vector2(20, 36)
+shape = SubResource("RectangleShape2D_bgdyk")
+
+[node name="Polygon2D" type="Polygon2D" parent="Category/Hint"]
+position = Vector2(54.004, -0.73881)
+scale = Vector2(1.09725, 1.10554)
+polygon = PackedVector2Array(-17, 7, 112, 7, 112, 64, -144, 64, -144, 7)
+
+[node name="Label" type="Label" parent="Category/Hint/Polygon2D"]
+offset_left = -56.0
+offset_top = 8.0
+offset_right = 27.0
+offset_bottom = 61.0
+text = "HINT"
+label_settings = SubResource("LabelSettings_qcn5p")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+z_as_relative = false
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.02
+anchor_top = 0.035
+anchor_right = 0.98
+anchor_bottom = 0.965
+offset_left = -0.600002
+offset_top = -0.200001
+offset_right = 0.599976
+offset_bottom = 0.199951
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TopRow" type="MarginContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_top = 45
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/TopRow"]
+custom_minimum_size = Vector2(75, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+alignment = 1
+
+[node name="LetterBox0" type="Label" parent="VBoxContainer/TopRow/HBoxContainer"]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+label_settings = SubResource("LabelSettings_74xuk")
+horizontal_alignment = 1
+
+[node name="Polygon2D" type="Polygon2D" parent="VBoxContainer/TopRow/HBoxContainer/LetterBox0"]
+z_index = -1
+position = Vector2(22, -6)
+color = Color(0.219608, 0.286275, 0.231373, 0.509804)
+polygon = PackedVector2Array(-16, 8, 48, 8, 48, 80, -16, 80)
+
+[node name="Polygon2D2" type="Polygon2D" parent="VBoxContainer/TopRow/HBoxContainer/LetterBox0"]
+position = Vector2(21, 9)
+color = Color(0, 0, 0, 1)
+polygon = PackedVector2Array(49, 56, -15, 56, -15, 64, 49, 64)
+
+[node name="BottomRow" type="MarginContainer" parent="VBoxContainer"]
+visible = false
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/BottomRow"]
+custom_minimum_size = Vector2(75, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+alignment = 1
+
+[node name="LetterBox16" type="Label" parent="VBoxContainer/BottomRow/HBoxContainer"]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+label_settings = SubResource("LabelSettings_74xuk")
+horizontal_alignment = 1
+
+[node name="Polygon2D" type="Polygon2D" parent="VBoxContainer/BottomRow/HBoxContainer/LetterBox16"]
+z_index = -1
+position = Vector2(22, -6)
+color = Color(0.219608, 0.286275, 0.231373, 0.509804)
+polygon = PackedVector2Array(-16, 8, 48, 8, 48, 80, -16, 80)
+
+[node name="Polygon2D2" type="Polygon2D" parent="VBoxContainer/BottomRow/HBoxContainer/LetterBox16"]
+position = Vector2(21, 9)
+color = Color(0, 0, 0, 1)
+polygon = PackedVector2Array(49, 56, -15, 56, -15, 64, 49, 64)
+
+[node name="Misses" type="Label" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 75)
+layout_mode = 2
+label_settings = SubResource("LabelSettings_wo0l4")
+horizontal_alignment = 1
+
+[node name="Polygon2D" type="Polygon2D" parent="VBoxContainer/Misses"]
+z_index = -1
+position = Vector2(-68.077, -4)
+scale = Vector2(1.23077, 1)
+color = Color(0.219608, 0.286275, 0.231373, 0.509804)
+polygon = PackedVector2Array(295, 17, 295, 73, 815, 73, 815, 9, 295, 9)
+
+[node name="GameOver" type="Label" parent="VBoxContainer"]
+visible = false
+layout_mode = 2
+text = "Game Over!"
+label_settings = SubResource("LabelSettings_t7j6f")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Polygon2D" type="Polygon2D" parent="VBoxContainer/GameOver"]
+z_index = -1
+position = Vector2(-376.8, 0)
+scale = Vector2(1.8, 1)
+color = Color(0.219608, 0.286275, 0.231373, 0.509804)
+polygon = PackedVector2Array(231, 22, 231, 75, 231, 126, 871, 126, 871, 22)
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="VBoxContainer"]
+visible = false
+z_as_relative = false
+layout_mode = 2
+
+[node name="Yes" type="TextureButton" parent="VBoxContainer/HBoxContainer3"]
+z_as_relative = false
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+size_flags_horizontal = 6
+action_mode = 0
+shortcut = SubResource("Shortcut_h2snd")
+texture_normal = ExtResource("4_cywgj")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer3/Yes"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.08
+anchor_right = 2.773
+anchor_bottom = 1.0
+offset_left = -2.0
+offset_top = -10.0
+offset_right = 21.025
+offset_bottom = 9.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Play 
+Again?"
+label_settings = SubResource("LabelSettings_kywmv")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Polygon2D" type="Polygon2D" parent="VBoxContainer/HBoxContainer3/Yes"]
+z_index = -1
+color = Color(0.219608, 0.286275, 0.231373, 0.509804)
+polygon = PackedVector2Array(-6, -2, -6, 86, 218, 86, 218, -10, -6, -10)
+
+[node name="No" type="TextureButton" parent="VBoxContainer/HBoxContainer3"]
+z_index = 10
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+size_flags_horizontal = 6
+texture_normal = ExtResource("5_gui1b")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer3/No"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -1.84
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = -12.0
+offset_bottom = 7.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Go to
+menu"
+label_settings = SubResource("LabelSettings_kywmv")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Polygon2D" type="Polygon2D" parent="VBoxContainer/HBoxContainer3/No"]
+z_index = -1
+position = Vector2(-136, 0)
+color = Color(0.219608, 0.286275, 0.231373, 0.509804)
+polygon = PackedVector2Array(-6, -2, -6, 86, 218, 86, 218, -10, -6, -10)
+
+[node name="TouchKeyboard" parent="." instance=ExtResource("6_4vfis")]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.003
+offset_left = 25.0
+offset_top = 25.0
+offset_right = -25.0
+offset_bottom = -25.0
+
+[node name="LineEdit" type="LineEdit" parent="."]
+clip_children = 1
+z_index = 100
+z_as_relative = false
+layout_mode = 2
+offset_left = 25.0
+offset_top = -104.0
+offset_right = 1255.0
+offset_bottom = -61.0
+theme_override_font_sizes/font_size = 25
+alignment = 1
+
+[node name="KeyboardReveal" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.826
+anchor_top = 0.914
+anchor_right = 1.007
+anchor_bottom = 1.016
+offset_left = 0.447937
+offset_top = -0.272034
+offset_right = -18.0641
+offset_bottom = -17.368
+scale = Vector2(1.09754, 1.3584)
+toggle_mode = true
+texture_normal = ExtResource("7_nk38n")
+texture_pressed = ExtResource("8_51bdc")
+
+[node name="Sprite2D" type="Sprite2D" parent="KeyboardReveal"]
+position = Vector2(102.046, 22.8386)
+scale = Vector2(0.365414, 0.207183)
+texture = ExtResource("9_y24nj")
+metadata/_edit_group_ = true
+
+[connection signal="mouse_entered" from="Category/Hint" to="." method="_on_hint_mouse_entered"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer3/Yes" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer3/No" to="." method="_on_no_pressed"]
+[connection signal="user_input" from="TouchKeyboard" to="." method="_on_touch_keyboard_user_input"]
+[connection signal="text_changed" from="LineEdit" to="." method="_on_line_edit_text_changed"]
+[connection signal="text_submitted" from="LineEdit" to="." method="_on_line_edit_text_submitted"]
+[connection signal="toggled" from="KeyboardReveal" to="." method="_on_keyboard_reveal_toggled"]
