@@ -1,5 +1,5 @@
 fc8a56933c4b1c8d796fdb8f7a9f9475
-::res://::1706603203
+::res://::1706605289
 3redbooks.png::CompressedTexture2D::3558396958263557883::1696912636::1706589905::1::::<><>::
 A.gd::GDScript::-1::1697440722::0::1::::<>Button<>::
 AlphabetBG2.jpeg::CompressedTexture2D::7892219468996698856::1697430095::1706589908::1::::<><>::
@@ -9,7 +9,7 @@ boat.tscn::PackedScene::2083251059246216636::1696912636::0::1::::<><>::uid://bij
 dictionary.json::JSON::-1::1697526272::0::1::::<><>::
 DoraemonTheme.gd::GDScript::-1::1696912636::0::1::::<>Node<>::
 DoraemonTheme.tscn::PackedScene::350543568747538967::1706589659::0::1::::<><>::res://DoraemonTheme.gd<>uid://ch2aijho550js
-export_presets.cfg::TextFile::-1::1706594962::0::1::::<><>::
+export_presets.cfg::TextFile::-1::1706603478::0::1::::<><>::
 global.gd::GDScript::-1::1697085438::0::1::::<>Node<>::
 Hangman-Andre’s MacBook Pro.gd::GDScript::-1::1696948270::0::1::::<>Control<>::
 Hangman-DESKTOP-BRTJ14J.gd::GDScript::-1::1696944796::0::1::::<>Control<>::
@@ -27,7 +27,7 @@ lamp.png::CompressedTexture2D::1160330247767895663::1696912636::1706589905::1:::
 letters.tscn::PackedScene::1567430454391723679::1696912636::0::1::::<><>::
 letter_box.tscn::PackedScene::7463103448342826932::1696912636::0::1::::<><>::uid://ca7w0gcs3a2r1
 Menu.gd::GDScript::-1::1697085867::0::1::::<>Control<>::
-Menu.tscn::PackedScene::4730575016048889028::1706594873::0::1::::<><>::uid://d1uktjnan0er8::::res://kenney_ui-pack/PNG/blue_button00.png<>res://Menu.gd<>uid://dkpbx4bfsklsi::::res://AlphabetBG2.jpeg<>uid://d5sjdervx5rc::::res://kenney_ui-pack/PNG/blue_button01.png<>res://PlayButton.gd<>uid://ca7w0gcs3a2r1::::res://kenney_ui-pack/Font/GOTHIC.TTF
+Menu.tscn::PackedScene::4730575016048889028::1706605280::0::1::::<><>::uid://d1uktjnan0er8::::res://kenney_ui-pack/PNG/blue_button00.png<>res://Menu.gd<>uid://dkpbx4bfsklsi::::res://AlphabetBG2.jpeg<>uid://d5sjdervx5rc::::res://kenney_ui-pack/PNG/blue_button01.png<>res://PlayButton.gd<>uid://ca7w0gcs3a2r1::::res://kenney_ui-pack/Font/GOTHIC.TTF
 nobita-books-crying.webp::CompressedTexture2D::2235970781772141315::1696912636::1706589905::1::::<><>::
 NobitaStudying.jpg::CompressedTexture2D::5319916242764458488::1696912636::1706589906::1::::<><>::
 ocean-clipart-transparent-4.png::CompressedTexture2D::5889119687756696854::1696912636::1706589907::1::::<><>::
