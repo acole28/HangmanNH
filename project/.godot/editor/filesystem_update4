@@ -2,3 +2,4 @@ res://Menu.tscn
 res://Hangman.tscn
 res://DoraemonTheme.tscn
 res://PirateTheme.tscn
+res://PlayButton.gd

@@ -1,7 +1,7 @@
 extends TextureButton
 
 
-var game = preload("res://hangman.tscn")
+var game = preload("res://Hangman.tscn")
 
 
 
