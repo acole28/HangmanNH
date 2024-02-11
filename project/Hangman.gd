@@ -219,11 +219,9 @@ func _on_reset_pressed():
 	get_tree().reload_current_scene()
 
 
-
-
 func _on_hint_mouse_entered():
 	$Category/Hint.visible = false
-
+	
 
 func _on_keyboard_reveal_toggled(button_pressed):
 	if get_node("TouchKeyboard").visible == false:

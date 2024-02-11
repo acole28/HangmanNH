@@ -1,7 +1,7 @@
 extends Control
 
 
-@export_file("res://hangman.tscn") var game
+@export_file("res://Hangman.tscn") var game
 
 var dictionary = get_from_json("res://dictionary.json")
 

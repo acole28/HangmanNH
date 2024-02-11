@@ -47,7 +47,6 @@ _data = {
 }
 
 [node name="TextureRect" type="TextureRect"]
-visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -69,6 +68,6 @@ libraries = {
 
 [node name="Ocean-clipart-transparent-4" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(576, 568)
-scale = Vector2(0.515, 0.55)
+position = Vector2(642.5, 622)
+scale = Vector2(0.570417, 0.73)
 texture = ExtResource("3_uqgdw")
