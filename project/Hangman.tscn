@@ -81,6 +81,7 @@ polygon = PackedVector2Array(-87, -1, 197.769, -0.999969, 197.769, 58.8576, -86.
 position = Vector2(141, 31)
 
 [node name="Polygon2D" type="Polygon2D" parent="Category/Hint"]
+visible = false
 position = Vector2(17, -38)
 scale = Vector2(1.09725, 1.10554)
 polygon = PackedVector2Array(-17, 7, 112, 7, 112, 64, -144, 64, -144, 7)

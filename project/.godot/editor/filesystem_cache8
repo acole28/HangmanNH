@@ -1,5 +1,5 @@
 fc8a56933c4b1c8d796fdb8f7a9f9475
-::res://::1707636344
+::res://::1707637575
 3redbooks.png::CompressedTexture2D::3558396958263557883::1696912636::1706589905::1::::<><>::
 A.gd::GDScript::-1::1697440722::0::1::::<>Button<>::
 AlphabetBG2.jpeg::CompressedTexture2D::7892219468996698856::1697430095::1706589908::1::::<><>::
@@ -9,13 +9,13 @@ boat.tscn::PackedScene::2083251059246216636::1706656931::0::1::::<><>::uid://bij
 dictionary.json::JSON::-1::1697526272::0::1::::<><>::
 DoraemonTheme.gd::GDScript::-1::1696912636::0::1::::<>Node<>::
 DoraemonTheme.tscn::PackedScene::350543568747538967::1706658858::0::1::::<><>::res://DoraemonTheme.gd<>uid://ch2aijho550js::::res://NobitaStudying.jpg<>uid://csjndlcag88h2::::res://StackOfBooks.png<>uid://6nx1n6ro53j::::res://pencilcup.png<>uid://qscp76kbjidr::::res://lamp.png<>uid://64ed2t3n8vax::::res://nobita-books-crying.webp
-export_presets.cfg::TextFile::-1::1706609714::0::1::::<><>::
+export_presets.cfg::TextFile::-1::1707636830::0::1::::<><>::
 global.gd::GDScript::-1::1697085438::0::1::::<>Node<>::
 Hangman-Andre’s MacBook Pro.gd::GDScript::-1::1696948270::0::1::::<>Control<>::
 Hangman-DESKTOP-BRTJ14J.gd::GDScript::-1::1696944796::0::1::::<>Control<>::
 Hangman-DESKTOP-BRTJ14J.tscn::PackedScene::7158623106802128360::1696947278::0::1::::<><>::res://Hangman.gd<>uid://cr734us8lknee
 Hangman.gd::GDScript::-1::1706658392::0::1::::<>Control<>::
-Hangman.tscn::PackedScene::7158623106802128360::1706658919::0::1::::<><>::res://Hangman.gd<>uid://cr734us8lknee::::res://kenney_ui-pack/Font/GOTHICB.TTF<>uid://ca7w0gcs3a2r1::::res://kenney_ui-pack/Font/GOTHIC.TTF<>uid://c5mnq3hnfob36::::res://kenney_ui-pack/PNG/green_circle.png<>uid://cncwf2w1rp4h7::::res://kenney_ui-pack/PNG/red_cross.png<>uid://cnqgmo0qgh55x::::res://TouchKeyboard.tscn<>uid://d04sxfa0a2tak::::res://kenney_ui-pack/PNG/green_button00.png<>uid://dm2ikfv4fj80s::::res://kenney_ui-pack/PNG/green_sliderUp.png<>uid://bos4y34a4kxre::::res://keyboard.webp
+Hangman.tscn::PackedScene::7158623106802128360::1707636837::0::1::::<><>::res://Hangman.gd<>uid://cr734us8lknee::::res://kenney_ui-pack/Font/GOTHICB.TTF<>uid://ca7w0gcs3a2r1::::res://kenney_ui-pack/Font/GOTHIC.TTF<>uid://c5mnq3hnfob36::::res://kenney_ui-pack/PNG/green_circle.png<>uid://cncwf2w1rp4h7::::res://kenney_ui-pack/PNG/red_cross.png<>uid://cnqgmo0qgh55x::::res://TouchKeyboard.tscn<>uid://d04sxfa0a2tak::::res://kenney_ui-pack/PNG/green_button00.png<>uid://dm2ikfv4fj80s::::res://kenney_ui-pack/PNG/green_sliderUp.png<>uid://bos4y34a4kxre::::res://keyboard.webp
 icon.svg::CompressedTexture2D::3973806275525820751::1696912636::1706589905::1::::<><>::
 img1.wallspic.com-azure-ocean-light_blue-coastal_and_oceanic_landforms-wind_wave-4623x3117 (1).jpg::CompressedTexture2D::2967246210499994212::1696912636::1706589913::1::::<><>::
 Keyboard.gd::GDScript::-1::1697092791::0::1::::<>Control<>::

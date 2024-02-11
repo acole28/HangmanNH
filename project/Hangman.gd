@@ -45,7 +45,7 @@ func _physics_process(delta):
 	t += delta * 4
 
 func _ready():
-	var topRow = $VBoxContainer/HBoxContainer
+	var topRow = $VBoxContainer/TopRow/HBoxContainer
 	select_word()
 	print(answer)
 	$LineEdit.grab_focus()

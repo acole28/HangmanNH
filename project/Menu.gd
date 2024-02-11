@@ -13,7 +13,7 @@ func _ready():
 
 
 func make_list():
-	$VBoxContainer/VBoxContainer/CategoryOptions.add_item("なし")
+	$VBoxContainer/VBoxContainer/CategoryOptions.add_item("N/A")
 	for i in dictionary.size():
 		var category = dictionary[i].category
 		$VBoxContainer/VBoxContainer/CategoryOptions.add_item(category)
